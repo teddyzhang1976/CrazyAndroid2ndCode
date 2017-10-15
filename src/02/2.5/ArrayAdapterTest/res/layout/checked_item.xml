@@ -7,6 +7,6 @@
 	android:textSize="24dp"
 	android:checkMark="@drawable/ok"
 	android:shadowColor="#f0f"
-	android:shadowDx="4"
-	android:shadowDy="4"
-	android:shadowRadius="2"/>
+	android:shadowDx="0"
+	android:shadowDy="8"
+	android:shadowRadius="4"/>

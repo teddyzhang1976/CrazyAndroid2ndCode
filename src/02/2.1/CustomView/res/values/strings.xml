@@ -2,4 +2,5 @@
 <resources>
 	<string name="hello">Hello World, TableLayoutTest!</string>
 	<string name="app_name">跟随手指的小球</string>
+	<string name="teddy">zhang</string>
 </resources>

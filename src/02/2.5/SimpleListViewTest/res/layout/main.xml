@@ -11,7 +11,7 @@
 	android:layout_height="wrap_content" 
 	android:entries="@array/books"
 	android:divider="#f00"
-	android:dividerHeight="2px"
+	android:dividerHeight="10px"
 	android:headerDividersEnabled="false"
 	/>
 </LinearLayout>
