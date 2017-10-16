@@ -17,4 +17,5 @@
 		android:text="单击我" 
 		android:onClick="clickHandler"
 		/>
+
 </RelativeLayout>
