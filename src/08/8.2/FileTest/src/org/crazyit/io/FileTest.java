@@ -23,8 +23,9 @@ import android.widget.EditText;
  */
 public class FileTest extends Activity
 {
-	final String FILE_NAME = "crazyit.bin";
-
+	//final String FILE_NAME = "crazyit.bin";
+	final String FILE_NAME = "/storage/emulated/0/2.bin";
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState)
 	{

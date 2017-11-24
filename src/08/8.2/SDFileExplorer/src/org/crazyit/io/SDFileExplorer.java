@@ -9,6 +9,7 @@ import java.util.Map;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -49,13 +50,19 @@ public class SDFileExplorer extends Activity
 		// 获取系统的SD卡的目录
 		File root = new File("/mnt/sdcard/");
 		// 如果 SD卡存在
-		if (root.exists())
-		{
+		Log.d("teddy: root=",""+root.toString());
+		
+		if (root.exists()){
 			currentParent = root;
 			currentFiles = root.listFiles();
-			// 使用当前目录下的全部文件、文件夹来填充ListView
-			inflateListView(currentFiles);
+			if(currentFiles!=null){
+				Log.d("teddy: current files number=",""+currentFiles.length);
+				inflateListView(currentFiles);
+			}
+			else
+				Log.d("teddy: crrent directory is empty", "dd");
 		}
+		
 		// 为ListView的列表项的单击事件绑定监听器
 		listView.setOnItemClickListener(new OnItemClickListener()
 		{
@@ -110,6 +117,7 @@ public class SDFileExplorer extends Activity
 				}
 			}
 		});
+	
 	}
 
 	private void inflateListView(File[] files) //①
